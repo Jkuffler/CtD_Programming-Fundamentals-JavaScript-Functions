@@ -1,6 +1,6 @@
 // You need to fork this repl.it and then will turn in the link in your browser as your homework assignment once you are done answering the following questions.
 
-// TESTING you should be able to test your answers by clicking into Shell on the right and typing 'npm test'.
+// TESTING you should be able to test your answers by clicking into Shell on the right and typing 'npm test' or calling the function in console.
 
 // DEBUGGING type console.log('any string here', varName) to console log values to see your answers before you run test.
 // Each question below has an EXAMPLE of what would be returned if you invoke/call the function.  
@@ -44,7 +44,7 @@ function today() {
 function concat() {
   let h = 'Hello'
   let g = ' Goodbye'
-  return `${h}`+`${g}`
+  return `${h}` + `${g}`
 }
 
 
@@ -68,7 +68,7 @@ function capitalizeFirstLetter(String) {
 // 1
 
 function mod(num1, num2) {
-  return num1%num2
+  return num1 % num2
 }
 
 // QUESTION 6. Write a function definition that takes 2 whole Number (integer) parameters and returns their average (hint: there is no built-in average operator in JavaScript).
@@ -78,8 +78,8 @@ function mod(num1, num2) {
 //     should result in the next line appearing in your console...
 // 5.5
 
-function avg() {
-  
+function avg(num1, num2) {
+  return (num1 + num2) / 2
 }
 
 // QUESTION 7. Write a function definition that takes 2 Number parameters and returns the absolute difference between those numbers. For example, if the first parameter is smaller than the second, the first parameter will be subtracted from the second. If the first parameter is larger than the second, the second parameter will be subtracted from the first. If they are both equal, return the first parameter subtracted by the second.
@@ -97,8 +97,8 @@ function avg() {
 // console.log("testing out my function for Q7: ", absoluteDifference(7,7));
 // 0
 
-function absoluteDifference() {
-  
+function absoluteDifference(num1, num2) {
+  return Math.abs(num1 - num2)
 }
 
 // QUESTION 8. Write a function definition that takes 2 String parameters and returns the length of the longest string. If they are of equal length, just return that length.
@@ -112,8 +112,12 @@ function absoluteDifference() {
 // console.log("testing out my function for Q8: ", longestStringLength('hello', 'world'));
 // 5
 
-function longestStringLength() {
-  
+function longestStringLength(str1, str2) {
+ if(str1.length >= str2.length) {
+   return str1.length;
+ } else {
+   return str2.length;
+ }
 }
 
 
