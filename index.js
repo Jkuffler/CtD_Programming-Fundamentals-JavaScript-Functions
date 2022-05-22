@@ -42,7 +42,9 @@ function today() {
 // foobar
 
 function concat() {
-  
+  let h = 'Hello'
+  let g = ' Goodbye'
+  return `${h}`+`${g}`
 }
 
 
@@ -53,8 +55,8 @@ function concat() {
 //     should result in the next line appearing in your console...
 // Bob malarky
 
-function capitalizeFirstLetter() {
-  
+function capitalizeFirstLetter(String) {
+  return String.charAt(0).toUpperCase() + String.slice(1)
 }
 
 
@@ -65,8 +67,8 @@ function capitalizeFirstLetter() {
 //     should result in the next line appearing in your console...
 // 1
 
-function mod() {
-  
+function mod(num1, num2) {
+  return num1%num2
 }
 
 // QUESTION 6. Write a function definition that takes 2 whole Number (integer) parameters and returns their average (hint: there is no built-in average operator in JavaScript).
